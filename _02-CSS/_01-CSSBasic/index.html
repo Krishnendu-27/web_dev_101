@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS basic</title>
+  </head>
+  <!-- By using "background-color" we change the background color; "color" changes the text color. -->
+  <body style="background-color: rgba(77, 0, 39, 0.6); color: #690000">
+    <h2 style="color: rgb(229, 255, 0)">halo</h2>
+    <h4 style="border: 3px solid rgba(255, 50, 5, 0.5)">
+      my name is haloworld
+    </h4>
+    <h2 style="background-color: rgb(255, 0, 0)">this uses rgb</h2>
+    <h2 style="background-color: rgba(67, 89, 45, 1)">this uses rgba</h2>
+    <h2 style="background-color: hsl(180, 100%, 20%)">this uses hsl</h2>
+    <h2 style="background-color: #5a5a">this uses hex code</h2>
+
+    <!-- ############ Text Formatting -->
+
+    <!-- Justified text -->
+    <p style="text-align: justify; width: 300px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+      voluptatum inventore. Quos dignissimos iusto, laboriosam quibusdam
+      recusandae excepturi est numquam. Accusantium iure dolores nobis
+      praesentium veniam placeat fuga excepturi ratione.
+    </p>
+    <!-- Ragged-right text; helps distribute spacing to fit available width -->
+    <p style="width: 300px">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nulla
+      quaerat incidunt blanditiis molestiae nemo aliquam a temporibus veritatis
+      tempora nostrum dolorem dolorum, dolore officiis perspiciatis tempore aut
+      cum vitae.
+    </p>
+    <!-- Right-to-left text direction -->
+    <p style="direction: rtl">
+      halo bro what you doing Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Eaque asperiores maiores cupiditate nam sed beatae
+      temporibus, dolorum magnam, quis praesentium odit aliquid, voluptatibus
+      ullam? Eaque qui accusantium ad modi culpa!
+    </p>
+    <!-- Text decoration lines: overline, line-through, underline -->
+    <h4 style="text-decoration-line: overline">apple</h4>
+    <h4 style="text-decoration-line: line-through">samsung</h4>
+    <h4 style="text-decoration-line: underline">samsung</h4>
+
+    <!-- Text transformation and spacing -->
+
+    <!-- Capitalize first letter of each word -->
+    <p style="text-transform: capitalize">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+
+    <!-- Convert all text to lowercase -->
+    <p style="text-transform: lowercase">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+    <!-- Convert all text to uppercase -->
+    <p style="text-transform: uppercase">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+    <!-- Letter spacing -->
+    <h2 style="letter-spacing: 6px">halo world</h2>
+    <h2 style="letter-spacing: -3px">halo world</h2>
+    <!-- Line height multiplier (e.g., 1.2 × font size) -->
+    <p style="line-height: 1.5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+    <!-- Word spacing -->
+    <p style="word-spacing: 1.5rem">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+    <!-- First-line text indent -->
+    <p style="text-indent: 20px">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores a
+      consequatur vel assumenda, cupiditate saepe illum nemo nesciunt explicabo?
+      Sint, ipsa! Velit veritatis molestiae iure placeat voluptatem molestias
+      rem!
+    </p>
+    <!-- Different CSS units: rem, %, px -->
+    <div style="font-size: 1.5rem">
+      <p style="font-size: 1.8rem">halo bro</p>
+      <div style="background-color: goldenrod; color: black; width: 200px">
+        this is an example of fixed width (200px)
+      </div>
+      <br />
+      <!-- Width 50% of parent element; responsive to parent size -->
+      <div style="background-color: goldenrod; color: black; width: 50%">
+        this is an example of percentage width
+      </div>
+    </div>
+    <!-- rem vs. em:
+         em units are relative to the parent element's font size;
+         here, 1.5em = 1.5 × 24px = 36px -->
+    <div style="font-size: 24px">
+      <p style="font-size: 1.5em">Lorem ipsum dolor sit amet.</p>
+    </div>
+  </body>
+</html>
