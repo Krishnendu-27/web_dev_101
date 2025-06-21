@@ -1,0 +1,118 @@
+this is a universal selector its apply to all the html * {
+  background-color: darkslategray;
+  color: antiquewhite;
+}
+p {
+  font-size: 24px;
+  background-color: blue;
+}
+div {
+  font-size: 18px;
+  /* background-color: rgb(255, 0, 0); */
+}
+/* we can use extarnal CSS to link diferent page */
+#div3 {
+  font-size: 22px;
+  padding: 5px;
+  background-color: green;
+}
+/*  one elment can inhaert style form diffrent selector until its new then the old one replace new one stay */
+/* here i give div color red but in #div3 i give greeen so now red its repalce with green */
+.all-head-2 {
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: hotpink;
+}
+/* for descndent selecotr need to use parent then child element */
+div p {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+/* for direct child of div its use > sybol */
+div > h4 {
+  text-align: center;
+}
+/* for only first element use its only effet on first div who has first elemnt is or close lement h3 */
+
+div + h3 {
+  background-color: yellowgreen;
+  color: #2a2a2a;
+}
+/* to use all  h3 under div*/
+div ~ h3 {
+  background-color: yellowgreen;
+  color: #2a2a2a;
+}
+
+/* <!-- pusudo elements --> */
+/* not visited */
+a:link {
+  background-color: gray;
+  color: blue;
+}
+/*  visited */
+a:visited {
+  background-color: rgb(43, 39, 39);
+  color: rgb(255, 0, 0);
+}
+/*  when its hover */
+/* it work with class and id also */
+a:hover {
+  font-size: x-large;
+  color: cadetblue;
+}
+/* when the link is activated */
+a:active {
+  text-decoration: underline;
+  color: orange;
+}
+/*  so target first child  */
+/* we need to give "parnet.class name child:first-child */
+/* Style the first list item in the first ul */
+ul.first-child-list li:first-child {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style the last list item in the second ul */
+ul.last-child-list li:last-child {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Style every third list item in the third ul */
+ul.nth-child-list li:nth-child(3) {
+  background-color: yellow;
+}
+
+/* Style the only child element in the fourth ul */
+ul.only-child-list li:only-child {
+  color: green;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+/* No special styling for non-only-child lists */
+ul.not-only-child-list li {
+  color: purple;
+  font-style: normal;
+}
+.before-example::before {
+  content: "haa meri jaaan";
+  color: aqua;
+}
+.after-example::after {
+  content: "bye meri jaaan ";
+  color: rgb(170, 0, 255);
+}
+/* its target the first letter of the content */
+.first-letter-example::first-letter {
+  color: chocolate;
+  text-transform: uppercase;
+}
+.first-line-example::first-line {
+  text-transform: uppercase;
+  font-weight: bold;
+}

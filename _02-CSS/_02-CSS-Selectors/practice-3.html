@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2::before {
+        content: "*";
+        font-size: 30px;
+        color: gray;
+      }
+      p::after {
+        content: " Readmore";
+        font-style:italic ;
+        color: blue;
+      }
+      p::first-letter {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p::first-line {
+        color: darkred;
+      }
+      li::marker {
+        content: "->";
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>section title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam
+      excepturi aut neque doloremque consequatur qui eos facere laudantium optio
+      tenetur culpa, consectetur non cupiditate perspiciatis incidunt aperiam
+      deleniti! Quis.
+    </p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </body>
+</html>

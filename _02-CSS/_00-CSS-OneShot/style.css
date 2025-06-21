@@ -1,0 +1,40 @@
+/* every broweser has its own styleing and css  Browser own CSS called "user agent stylesheet" */
+/* we can not change the browser CSS but we can overright it  */
+html {
+  background-color: rgb(60, 58, 58);
+  color: white;
+}
+/* CSS full from is Cascading Stylesheets  "Cascading" mens override we overlap style of a web page */
+
+/* fex box */
+.parent {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+.child {
+  height: 50px;
+  /* width: 80px; */
+  border: 2px solid red;
+  /* flex give ratio space  */
+  flex: 1;
+  order: 3;
+}
+/* order works on prority who has most prority its show in first 
+most proroty gioes to 0----> */
+#child-2 {
+  flex: 2;
+  order: 2;
+  /* align-self: center; */
+}
+/* the space betwwen the two element called marzine and space arround the contnent its slef called padding  */
+.parent1 {
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+}
+.child2 {
+  border: 2px solid blue;
+}

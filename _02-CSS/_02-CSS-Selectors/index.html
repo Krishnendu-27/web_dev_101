@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <!-- this is a exaple of internal CSS -->
+    <!-- <style>
+        *{
+            background-color: darkslategray;
+            color: antiquewhite;
+        }
+        </style> -->
+    <!-- for extranal css -->
+    <!-- "rel" represent of the relationship between the link  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet
+      quisquam cumque tempore rem est?
+    </p>
+    <div>Lorem ipsum dolor sit amet consectetur.</div>
+
+    <!-- id .class , universal selector -->
+    <!-- id must start with alphabate -->
+    <div id="div3">halo bro its id div3</div>
+    <!-- if there same id then browser not show eroor but its wrong to use same id twice  -->
+    <!-- to target vclass we have to use . and for id # -->
+    <h3 class="all-head-2">thhis is first heading use h3</h3>
+    <h3 class="all-head-2">thhis is seoned heading use h3</h3>
+    <h3 class="all-head-2">thhis is secoend heading use h3</h3>
+    <div>
+      <p>halo world</p>
+    </div>
+    <div>
+      <h4>this is a h4 of decendent of div</h4>
+    </div>
+    <div>
+      <h3>this is first h3</h3>
+      <h3>this is secoend h3</h3>
+      <h3>this is third h3</h3>
+    </div>
+
+    <!-- pusudo elements -->
+    <!-- if two links use same url then both get visited wehn click -->
+    <a href="#gho">visited </a>
+    <a href="#kio">unvisit </a>
+    <!-- so in html we can target any child by this -->
+
+    <!-- :first-child Example -->
+    <h2>:first-child Example</h2>
+    <ul class="first-child-list">
+      <li>This is the first item (red and bold).</li>
+      <li>This is the second item.</li>
+      <li>This is the third item.</li>
+      <li>This is the last item.</li>
+    </ul>
+
+    <!-- :last-child Example -->
+    <h2>:last-child Example</h2>
+    <ul class="last-child-list">
+      <li>This is the first item.</li>
+      <li>This is the second item.</li>
+      <li>This is the last item (blue and bold).</li>
+    </ul>
+
+    <!-- :nth-child(n) Example -->
+    <h2>:nth-child(n) Example</h2>
+    <ul class="nth-child-list">
+      <li>This is the first item.</li>
+      <li>This is the second item.</li>
+      <li>This is the third item (yellow background).</li>
+      <li>This is the fourth item.</li>
+    </ul>
+
+    <!-- !ASK AI TO TARGET 4th Element of the above list  -->
+    <!-- !HERE YOU MIGHT WANT TO USE THE LAST CHILD CLASS DEPENDING ON THE USE CASE. SO NEVER BLINDLY TRUST AI -->
+
+    <!-- :only-child Example -->
+    <h2>:only-child Example</h2>
+    <ul class="only-child-list">
+      <li>This is the only child.</li>
+    </ul>
+
+    <!-- NOT ONLY CHILD Example -->
+    <h2>Not Only Child Example</h2>
+    <ul class="not-only-child-list">
+      <li>First item.</li>
+      <li>Second item.</li>
+    </ul>
+    <p class="before-example">this is a exaple of before text</p>
+    <p class="after-example">this is a exaple of before text</p>
+    <p class="first-letter-example">this is a first letter example</p>
+    <!-- its break by browser or manulaly element like br -->
+    <h6 class="first-line-example">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+      reprehenderit voluptas, harum non facilis ipsum, fuga <br />voluptate ex
+      sapiente verodistinctio necessitatibus rem delectus. Neque aliquid
+      blanditiis molestiae voluptas quidem.
+    </h6>
+  </body>
+</html>

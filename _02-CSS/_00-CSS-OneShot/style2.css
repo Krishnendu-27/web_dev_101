@@ -1,0 +1,42 @@
+html {
+  background-color: #211f1f;
+  color: whitesmoke;
+}
+.parent-1 {
+  border: 3px dashed greenyellow;
+  /* its give the div grid */
+  display: grid;
+  /* we tell by this that we need rows &collms in this pixel */
+
+  /* grid-template-rows: 30px 30px 30px 30px;
+  grid-template-columns: 50px 90px 50px 50px; */
+
+  /* we can do this in a repet way  */
+  /*  we need 4 rows 50px each like this */
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(4, 50px);
+  /* it define the  gap bettwen child in the div */
+  grid-gap: 5px;
+}
+.child-1 {
+  border: 2px dotted red;
+}
+#childno1 {
+  /* grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3; */
+  /* its short version is  
+    grid-row: strat / end;
+    grid-column: strat / end;
+  */
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+#childno8 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  /* a alternative of this is */
+  /* its just do the work  single  it calculate according "grid-column-start" */
+  grid-column-end: span 3;
+}

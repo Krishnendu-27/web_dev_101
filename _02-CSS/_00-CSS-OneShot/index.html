@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS One Shot Part-1</title>
+    <!-- this is a example of extrnal CSS exxample -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- this is a example of internal CSS exxample -->
+    <!-- its use a  syntax-->
+    <!-- 
+     selcotr {
+     // property: value;
+     // property: value;
+     // property: value;
+     // property: value;
+     }
+    -->
+    <style>
+      button {
+        background-color: mediumorchid;
+        color: cornsilk;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- its a inline CSS example -->
+    <h1 style="background-color: blue"><center>CSS one Shot</center></h1>
+    <button>halo world</button>
+    <!-- we use seltion by id class tag -->
+    <!-- id is prority is more than class  -->
+    <!--
+      tag
+      class
+      id 
+      inline
+     -->
+    <!-- it use a "spefefic developer"  mens the more spefefic information give the more weight it get -->
+    <!-- in html there are two type of element block and inline  
+    block level took full width
+    inline elemnt took the width that it need 
+    -->
+
+    <!-- FLEX BOX -->
+    <!-- elexiable box -->
+    <!-- felxbox give power to move or change type of a div children or i say child elemnt of a parent elemnt -->
+    <!-- 1. by defualt all child led in main acesss  but it after flex its go to  
+        2. justify content its do the main axis 
+        3. algin axis work in cross axis-->
+
+    <div class="parent">
+      <div class="child">item1</div>
+      <div id="child-2" class="child">item2</div>
+      <div class="child">item3</div>
+      <div class="child">item4</div>
+      <div class="child">item5</div>
+    </div>
+
+    <div class="parent1">
+      <div class="child2">item1</div>
+      <div class="child2">item2</div>
+      <div class="child2">item3</div>
+      <div class="child2">item4</div>
+      <div class="child2">item5</div>
+    </div>
+  </body>
+</html>

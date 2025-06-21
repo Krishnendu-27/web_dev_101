@@ -1,0 +1,14 @@
+section p {
+  font-size: 16px;
+}
+article h2 {
+  background-color: blue;
+}
+/* here we can give a spefic item color */
+ul li:nth-child(1) {
+  font-weight: bolder;
+}
+/* here we add color after a certain element after to use it just need to write n+item number */
+ul li:nth-child(n + 3) {
+  background-color: gray;
+}
