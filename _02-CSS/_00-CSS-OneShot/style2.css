@@ -40,3 +40,38 @@ html {
   /* its just do the work  single  it calculate according "grid-column-start" */
   grid-column-end: span 3;
 }
+/* draw a box model hight and width calculation */
+
+/* if you give box-sizing : border box then its adjust the hight and width according the actual size you give its wont add any extra  space*/
+
+/* when two div give marzin the greatest them will have  */
+.box {
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+
+  border: 3px double blue;
+}
+#box-model-1 {
+  margin-bottom: 30px;
+}
+#box-model-2 {
+  margin-top: 20px;
+}
+
+/* there two typw of units in CSS 
+1. absolute : without any reference fixed
+Eg: city , pincode , po , ps
+example: 30px 
+2. relatice : in relation with somthing
+eg: 2 houce aways from school 
+example: em or %
+em: its multilpy  size acording the parent size    
+rem:  its multilpy  size acording the root size 
+vh: viewport high   
+vh: viewport width
+*/
+/* after do potison absolute we can  move a item in the page everywhwre it follow the nearest relative elemnt */
+/* fiexed mens we can fixed that any whre we want */
+/* ssticky first act like absolute but if its  out from the area that given to him its act like fixed*/
