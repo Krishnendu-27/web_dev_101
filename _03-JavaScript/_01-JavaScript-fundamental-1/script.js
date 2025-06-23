@@ -1,7 +1,8 @@
 // We can open Chrome DevTools by inspecting the page and selecting Console, or pressing Ctrl+Shift+J.
 // alert only works in the browser.
 // We can do math in the console, e.g., 45 + 55.
-alert("halo"); 
+
+// alert("halo");
 
 // To print output in a JS file, we use console.log().
 console.log("namsate ji");
@@ -68,12 +69,50 @@ console.log(typeof number); // object (this is considered a quirk/bug in JavaScr
 let age = 30;
 age = 52; // We updated the 'age' variable.
 
-const birthdate = 2200; 
+const birthdate = 2200;
 // This value should not change, so we use 'const'. Constants cannot be declared without initialization.
 
 // 'let' creates block-scoped variables.
 // 'var' creates function-scoped variables.
 
+// its a example of String - "" , '' , ``
+let names = "Raj";
+
+// Number - i) intiger ii) float
+let intiger = 0;
+let float = 1.5;
+
+// bolean - true & fales
+let likesicecream = true;
+
+// null - empthy nothing not 0 but empty
+// eg: its a tempreture are not show then its not 0 its empty
+
+let tempreture = null;
+
+// undefine its say "do the work latter the procastinate one"
+let entername; // its example of undefine not have the value
+
 // ################### Operators ################################################################
 
 // Operators allow us to transfer or combine values. There are many types: arithmetic, logical, comparison, etc.
+
+// ####################Function#############################
+// its like  a workower who do his job when ever its requeirmrnt are met
+
+// function function nsame (parametar ) {
+// code writen in here
+// }
+
+function sumOfTwoNum(num1, num2) {
+  return num1 + num2;
+}
+// now call the function
+
+console.log(sumOfTwoNum(99, 1));
+
+// ############################# array ###################3
+
+// its hold value in spequence help in organize the data its store diferent data types
+
+let arr1 = ["HTML", "CSS", "JavaScript", "ReactJs"];
