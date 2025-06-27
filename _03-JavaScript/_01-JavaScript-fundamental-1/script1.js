@@ -116,3 +116,112 @@ console.log(sumOfTwoNum(99, 1));
 // its hold value in spequence help in organize the data its store diferent data types
 
 let arr1 = ["HTML", "CSS", "JavaScript", "ReactJs"];
+
+// ######################## conditional############################33333
+/*
+if (condition) {
+  
+} else {
+  
+}
+*/
+
+// this help use to give the logic to computer
+let weather = "rainy";
+
+if (weather === "sunny") {
+  console.log("use suncream");
+} else if (weather === "rainy") {
+  console.log("took umbrela its raning outside");
+} else {
+  console.log("took jacket its cold");
+}
+
+// here use '=' for assign value && use '===' for cheking value its correct or not
+
+let numberofGuest = 4;
+
+let pizzasize;
+
+if (numberofGuest <= 2) {
+  pizzasize = "small";
+} else if (numberofGuest <= 5 && numberofGuest >= 2) {
+  pizzasize = "medium";
+} else {
+  pizzasize = "large";
+}
+
+console.log(pizzasize);
+
+/*
+90 - A
+80 - B
+70 - C
+60 >= D
+*/
+
+function gradecal(grade) {
+  if (grade <= 90 && grade >= 80) {
+    console.log(`Number is ${grade} so your grade is A`);
+  } else if (grade <= 80 && grade >= 70) {
+    console.log(`Number is ${grade} so your grade is B`);
+  } else if (grade <= 80 && grade >= 70) {
+    console.log(`Number is ${grade} so your grade is C`);
+  } else if (grade <= 70 && grade >= 60) {
+    console.log(`Number is ${grade} so your grade is D`);
+  } else {
+    console.log(`Number is ${grade} so your grade is F`);
+  }
+}
+gradecal(75);
+
+// ##################################array#########################################
+
+// there two way to define a array
+let animename = ["86", "Death Note", "AOT", "hell Paradise"];
+let favanime = new Array("naruto", "highschoolDXD", "one piece");
+
+console.log(animename);
+console.log(favanime);
+
+// for lenght
+console.log(animename.length);
+// for type
+console.log(typeof animename);
+// for reverse
+console.log(animename.reverse());
+
+// we can change any value by index
+
+console.log(favanime[2]);
+favanime[2] = "berserk";
+console.log(favanime[2]);
+
+// ################################## loops #########################3#######33333
+
+/* 
+loop is know as itration
+its has 3 step :
+1. declare the variable
+2. tell how much he will go 
+3. increment or decrement 
+
+i++ is same is i = i+1
+*/
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+let newgenanime = [
+  "black clover",
+  "naruto",
+  "demon slayer",
+  "JJK",
+  "One punch Man",
+];
+
+for (let i = newgenanime.length; i >= 0; i--) {
+  console.log(`in the ${i} index the value is ${newgenanime[i]}`);
+}
+// for (let i = 10; i > 1; i--) {
+//   console.log(i);
+// }
