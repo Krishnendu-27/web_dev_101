@@ -67,3 +67,52 @@ const reteirmentAgeCalculator = (birthyear) => {
   return retirmentage;
 };
 console.log(reteirmentAgeCalculator(2006));
+
+// call another fucntion in a function
+
+// example area of a quadrilateral  "Area = 1/2 * diagonal * (height1 + height2)"
+
+function hight(height1, height2) {
+  return height1 + height2;
+}
+
+function quadrilateral(diagonal, height1, height2) {
+  let area = (1 / 2) * diagonal * hight(height1, height2);
+  return area;
+}
+
+console.log(quadrilateral(8, 10, 20));
+
+//                                                                       Object
+// we cant give name each value in array and its hard to use in data base to solve that probelm we use obbject we store value in object in keyvalue pare so its easy to note and acess
+
+// exmaple
+
+let student1 = {
+  firstname: "ram ",
+  lastname: "das",
+  age: 50,
+  class: "3rdsem",
+  gmail: "ram123@gmail.com",
+};
+// every key called property mens its hold 4 property
+console.log(student1);
+// we can extract information by . and []
+
+console.log(student1.firstname);
+console.log(student1["age"]);
+
+let studeentDetails = student1["firstname"];
+console.log(studeentDetails + " its the name of student 1");
+
+let namekey = "name";
+
+// there a anothre way doing it
+console.log(student1["first" + namekey]);
+console.log(student1["last" + namekey]);
+// we can do this 
+console.log(student1["last" + namekey] + student1["first" + namekey]);
+// or this (its much prefer in industry)
+console.log(`${student1["last" + namekey]} ${student1["first" + namekey]}`);
+
+// when we first need to compute property name then we use braket and others time use .
