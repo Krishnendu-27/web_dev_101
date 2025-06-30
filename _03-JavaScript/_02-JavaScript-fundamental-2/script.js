@@ -110,9 +110,59 @@ let namekey = "name";
 // there a anothre way doing it
 console.log(student1["first" + namekey]);
 console.log(student1["last" + namekey]);
-// we can do this 
+// we can do this
 console.log(student1["last" + namekey] + student1["first" + namekey]);
 // or this (its much prefer in industry)
 console.log(`${student1["last" + namekey]} ${student1["first" + namekey]}`);
 
 // when we first need to compute property name then we use braket and others time use .
+
+// let interestIn = prompt("enter what you want to know about student1 firstname , lastname , age , class , gmail"
+// );
+
+// console.log(student1[interestIn]);
+// we get undefined when we acces a property that dosnot exit in object
+
+// anu sunction use in object called methoed
+
+let student2 = {
+  name: "Dwayne M. Johnson",
+  Birthday: 1948,
+  Email: "DwayneMJohnson@jourrapide.com",
+  /*
+  calage: function (Birthday) {
+    return 2025 - Birthday;
+  },
+*/
+  /*
+  calage: function () {
+    return 2025 - this.Birthday;
+  },
+  */
+  // this type of operation is heacy so tehre a another way
+  calage: function () {
+    // here a agess property creat by decalre "this.agess"
+    this.agess = 2025 - this.Birthday;
+    return this.agess;
+  },
+  hasdriverlicence: true,
+};
+/* we need to write object like this in function
+calage: function (Birthday) {
+  return 2025 - Birthday;
+},
+not this 
+function calage (Birthday) {
+    return 2025 - Birthday;
+  },
+}; 
+*/
+console.log(student2.calage());
+// we repat ouself so for that we use this keyword
+// "this" keyword is represent the whole object and we can acees value like normal way
+
+//                              loops
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
