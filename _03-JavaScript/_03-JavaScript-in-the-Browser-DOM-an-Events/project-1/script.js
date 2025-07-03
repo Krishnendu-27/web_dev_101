@@ -55,7 +55,15 @@ document.getElementById("check").addEventListener("click", function (e) {
     highscore = document.querySelector(
       "#high-score"
     ).textContent = `high score ${score}`;
-    document.querySelector('body').style.backgroundColor = '#60b347'
   }
 });
-console.log(score);
+document.getElementById("agian").addEventListener("click", function (e) {
+  document.querySelector(".score-decrement").textContent = `Score ${
+    (score = 19) + 1
+  }`;
+  let newscretnum = Math.trunc(Math.random() * 20) + 1;
+  screctNum = newscretnum;
+  number = document.querySelector(".number").textContent = "?";
+  
+});
+// console.log(score);
