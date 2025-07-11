@@ -1,0 +1,45 @@
+* {
+  background-color: #8ad0ff;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.btns {
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 24px;
+  background-color: #484848;
+}
+.card {
+  display: none;
+}
+.content {
+    align-items: center;
+    border: 3px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    padding: 10px;
+    border-radius: 10%;
+}
+.view{
+    align-items: center;
+    border: 3px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    padding: 10px;
+    border-radius: 10%;
+}
+.cancle {
+    /* position: absolute; */
+    margin-top: 4px;
+    margin-left: 97%;
+}
+h1 {
+    align-items: center;
+}
