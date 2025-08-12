@@ -1,0 +1,15 @@
+main {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+html {
+  background-color: black;
+  color: #fff;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
